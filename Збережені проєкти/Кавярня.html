@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<body>
+ <script>
+  "use strict"; 
+function menu() {
+alert(`Меню: 
+\n Борщ - ${borchPrice} грн 
+\n Деруни - ${derynyPrice} грн 
+\n Галушки - ${galyskiPrice} грн. 
+\n Вареники - ${varenykyPrice} грн 
+\n Узвар - ${uzvarPrice } грн 
+\n Чай - ${teaPrice} грн 
+\n Кава - ${coffePrice} грн`);
+}
+function check(){
+alert(`Ім'я замовника: ${userName ?? "шановний гість"};
+\nКількість замовлень - ${numberOfOrders};
+\nСумма - ${totalOrderAmount} грн.
+\nДякуємо, що завітали до нашого кафе!` );
+} 
+function discountCalculation(summOrder){
+if(summOrder > 250) return summOrder *= 0.9;
+}
+let sugarWantConfirm = () => {
+  if (confirm('Бажаєте додати сахару?')) return totalOrderAmount += sugarPrice;
+}
+let calculateTotal = function(dish){
+totalOrderAmount += dish;
+numberOfOrders += 1;
+}
+
+
+let userName;
+let totalOrderAmount = 0;
+let userOrder;
+let numberOfOrders = 0;
+let borchPrice = 100;
+let derynyPrice = 100;
+let galyskiPrice = 100;
+let varenykyPrice = 100;
+let uzvarPrice = 50;
+let teaPrice = 50;
+let coffePrice = 50;
+let sugarPrice = 5;
+
+
+alert('"Ласкаво просимо в наше кафе!" - сказав офіціант напроти вас.');
+userName = prompt("Підскажіть Ваше ім'я.");
+if(userName !== null) userName = userName.trim();
+if(userName == '') userName = null;
+alert(`Ви не пошкодуєте, що завітали до нас, ${userName ?? 'шановний гість'} `);
+alert('Сьогодні в нас акція, якщо ви робите замовлення на суму більше 250 грн, Вам надається знижка 10%!');
+alert('*Офіціант передає меню*');
+menu();
+let createOrder = () => { 
+  userOrder = prompt('Що бажаєте замовити?'); 
+  if(userOrder !== null) userOrder.trim();
+  return userOrder;
+};
+while(true){
+  createOrder();
+  if(userOrder === '' || userOrder === null) break;
+  switch(userOrder){
+   case "Борщ":
+   calculateTotal(borchPrice);   
+   break;
+   case "Деруни":
+     calculateTotal(derynyPrice);
+      break;
+   case "Галушки":
+     calculateTotal(galyskiPrice);
+     break;
+   case 'Вареники':
+     calculateTotal(varenykyPrice);
+      break;
+   case 'Узвар':
+     calculateTotal(uzvarPrice);
+      sugarWantConfirm();
+      break;
+   case 'Чай':
+     calculateTotal(teaPrice);
+     sugarWantConfirm();
+     break;
+   case 'Кава':
+     calculateTotal(coffePrice);
+     sugarWantConfirm();
+     break;
+   case 'admin':
+    alert(`Статистика:
+    \nКількість замовлень - ${numberOfOrders};
+    \nПрибуток - ${totalOrderAmount} грн
+    \nКількість клієнтів - ???`);
+    break;
+   case null:
+    break;
+   case '':
+    break;
+   default:
+    alert('Нажаль в меню такого немає.');
+   break;
+  
+  }
+
+}
+totalOrderAmount = discountCalculation(totalOrderAmount);
+check();
+  </script>
+</body>
+</html>
