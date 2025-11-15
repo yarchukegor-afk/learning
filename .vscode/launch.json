@@ -15,7 +15,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Запустити тест",
-            "file": "e:\\JS Learning\\learn.html"
+            "file": "e:\\JS Learning\\index.html"
         }
     ]
 }
