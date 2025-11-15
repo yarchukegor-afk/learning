@@ -82,9 +82,8 @@
 // }
 
 let value = +prompt('value','123');
-let steps = value.length;
 let n=0;
-for(let i = 0; i < steps; i++){
+for(let i = 0; i < value.length; i++){
 if(value%10 === 0) ++n;
 value = Math.floor(value/10);
 }
