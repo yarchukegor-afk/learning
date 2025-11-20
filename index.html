@@ -2,20 +2,19 @@
 <html>
   <meta charset="UTF-8">
 <head>
-  <h1>Hello!<h1>
-    <script>
-      let value = prompt('value','123');
-      let steps = value.length;
-      let n = 0;
-      let max = 0;
-      for(let i = 0; i < steps; i++){
-      a = value%10;
-      if(max < a) max = a;
-      value = Math.floor(value/10);
-      }
-      alert(max);
-    </script>
-  <!-- <script src="./js/lesson1.js"></script> -->
+  <h1>Hello! This is calculator!<h1>
+  <div>
+    <body>
+  <label>
+    <p>Enter the number</p>
+    <input type="number" name  = "firstNumber">
+    <p>+<p>
+    <input type="number" name  = "secondNumber">
+    <button>SUMM</button>
+  </label>
+  <div>
+     </body>
+  <script src="./js/script.js"></script>
   <!-- <script src="./js/lesson2.js"></script> -->
 </body>
 
