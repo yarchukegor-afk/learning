@@ -1,0 +1,21 @@
+docyment {
+    color: #a4f0ea;
+}
+
+
+p {
+    color: rgb(57, 56, 70);
+}
+input{
+    background-color: rgb(72, 94, 123);
+}
+form {
+    background-color: #a4f0ea;
+}
+body {
+    background-color: rgb(189, 189, 241);
+}
+button {
+    color: rgb(0, 0, 0);
+    background-color: #2fe61e80;
+}
