@@ -50,3 +50,8 @@ ul.link-colons {
     color: black;
 }
 
+.fototest{
+    background-image: url('../img/header/header.png');
+    height: 100px;
+    width: 100px;
+}
