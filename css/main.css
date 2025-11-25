@@ -1,21 +1,52 @@
-docyment {
-    color: #a4f0ea;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(3, 91, 37);
+    height: 150px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    padding: 0 30px;
+}
+
+.logo {
+    height: 125px;
+    width: 125px;
+    
+}
+.logo-colons {
+    flex: 0 0 auto;
+    margin-right: auto; 
 }
 
 
-p {
-    color: rgb(57, 56, 70);
+ul.link-colons {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
-input{
-    background-color: rgb(72, 94, 123);
+
+.link-colons li {
+    font-family: "Rubik Bubbles";
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 234, 151);
 }
-form {
-    background-color: #a4f0ea;
+
+.link-colons li a {
+    text-decoration: none;
+    color: black;
 }
-body {
-    background-color: rgb(189, 189, 241);
-}
-button {
-    color: rgb(0, 0, 0);
-    background-color: #2fe61e80;
-}
+

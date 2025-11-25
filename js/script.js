@@ -4,4 +4,5 @@ let buttonRef = document.querySelector('#confirm');
 function hello(hell2,massage){
  return alert(value+massage);
 };
-buttonRef.addEventListener('click' ,() => hello(value, userMessageRef.value));
+buttonRef.addEventListener
+('click', () => hello(value, userMessageRef.value));
