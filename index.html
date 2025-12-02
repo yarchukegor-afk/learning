@@ -6,9 +6,9 @@
   <meta name = "description" content="Навчання, легко вчимо">
   <title>Навчання</title>
   <link rel="stylesheet" href="css/main.css">
-
   </head>
-<body>
+  
+  <!-- <body>
   <div class="website-blocks">
   <header>
   <div class="header-container">
@@ -21,19 +21,51 @@
         <li><a class="link-page-text" href="./html/savedprojects.html">test</a></li>
         <li><a class="link-page-text" href="#">Тест</a></li>
       </ul>
+      
 
   </div>
 </header>
 
   <main>
     <div class="main-colons">
-      <form>
-        <textarea id="textFromUser"></textarea><br>
-        <img src="img/header/logo.png" id="confirm">Надіслати
-        </form>
+        <input type="text" id="textFromUser"></input><br>
+        <button id="confirm">Надіслати</button>
         <script src="js/script.js"></script>
     </div>
   </main>
 </div>
+</body> -->
 
-</html> 
+
+<h1>Калькулятор</h1>
+<div id="calculator">
+    <input type="text" id="numberInput" value="">
+    <div id="calculatorButtonsContainer">
+      <div id = "numberSelectionContainer">
+            <ul id="numberSelection">
+                  <button class="btnNum" id="1">1</button>
+                  <button class="btnNum" id="2">2</button>
+                  <button class="btnNum" id="3">3</button>
+                  <button class="btnNum" id="4">4</button>
+                  <button class="btnNum" id="5">5</button>
+                  <button class="btnNum" id="6">6</button>
+                  <button class="btnNum" id="7">7</button>
+                  <button class="btnNum" id="8">8</button>
+                  <button class="btnNum" id="9">9</button>
+                  <button class="btnNum" id="0">0</button>
+                  <button class="btnNum" id="coma">.</button>
+                  <button id="result">=</button>
+            </ul>
+      </div>
+      <div id="operationSelectionContainer">
+              <ul id="operationSelection">
+                  <button class="btnOp" id="addition">+</button>
+                  <button class="btnOp" id="subtraction">-</button>
+                  <button class="btnOp" id="multiplication">x</button>
+                  <button class="btnOp" id="division">/</button>
+              </ul>
+      </div>
+    </div>
+</div>
+<script src="js\script.js"></script>
+</html>

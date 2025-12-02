@@ -11,5 +11,21 @@
     <body>
       Hello it is second page.
     </body>
+let userInputs = [];
+while(true){
+  let input = prompt('Введіть число', 0);
+  if(input == null) break;
+  input = input.trim();
+  if(input === '' ) break;
+  userInputs.push(+input);
+};
 
+function summ(arr){
+  let summa = 0;
+  for(let key of userInputs){
+    summa += Number(arr[key]);
+  }
+  return alert(summa);
+}
+summ(userInputs);
   </html>

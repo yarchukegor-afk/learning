@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -48,10 +48,35 @@ ul.link-colons {
 .link-colons li a {
     text-decoration: none;
     color: black;
-}
+} */
 
-.fototest{
-    background-image: url('../img/header/header.png');
-    height: 100px;
-    width: 100px;
+
+
+/* .calculatorButtonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.numberSelectionContainer{
+    
+}
+#operationSelection{
+    display: flex;
+    width: 100%;
+
+}
+#calculatorButtonsContainer button {
+
+    padding: 20px;
+    margin: 10;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 30px;
+}
+#calculatorButtonsContainer button:active {
+  background-color: rgb(171, 103, 2);   */
+/* } */
+input:active{
+    background-color: brown;
 }
